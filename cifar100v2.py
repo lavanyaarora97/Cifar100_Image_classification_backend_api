@@ -55,7 +55,7 @@ async def predict(file: UploadFile = File(...)):
         class_name = CLASS_NAMES[class_index]
         confidence = predictions[0][class_index]
 
-        css_value = 'success' if i == 0 else 'danger'
+        css_value = 'green' if i == 0 else 'red'
 
         result.append({
             'class': class_name,
